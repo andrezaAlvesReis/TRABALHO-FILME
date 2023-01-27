@@ -3,8 +3,8 @@ body {
     padding: 0;
     height: 100vh;
     width: 100vw;
-    background: #526c87;
-    background-image: url('../images/comic-dynamic-elegant-concept-400-166471572.jpg');
+    overflow: hidden;
+    background-color: black;
 }
 
 main {
@@ -15,21 +15,30 @@ main {
     justify-content: space-between;
 }
 
+.container {
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: preto 0.2s linear forwards;
+    animation-delay: 2.1s;
+}
+
 .divCapitaoAmerica {
     position: absolute;
     top: 170px;
     left: 200px;
     object-fit: contain;
 }
-.divCapitaoAmerica div {
-    position: relative;
-}
+
 .capitaoAmericaCorpo {
     position: absolute;
     width: 430px;
     height: 580px;
     z-index: 999;
 }
+
 .capitaoAmericaCorpoSombra {
     position: absolute;
     left: -130px;
@@ -37,13 +46,21 @@ main {
     height: 580px;
 }
 
+.rasgo {
+    position: absolute;
+    top: -100px;
+    left: -200px;
+    width: 735px;
+    height: 700px;
+}
+
 .escudo {
     position: absolute;
     left: 17%;
     top: 20%;
     width: 12vw;
-    animation: escudo 4s infinite;
-    z-index: 9999;
+    animation: escudo 2s linear forwards;
+    z-index: 999;
 }
 
 .escudo img {
@@ -51,6 +68,22 @@ main {
     object-fit: contain;
 }
 
+.boom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    animation: boom 2.5s linear forwards;
+    animation-delay: 2s;
+}
+.boom img {
+    width: 1000px;
+    z-index: 9999;
+    opacity: 0;
+    animation: boom 2.5s linear forwards;
+    animation-delay: 2s;
+}
 @keyframes escudo {
     0% {
         left: 17%;
@@ -64,58 +97,34 @@ main {
         top: 0;
     }
 }
-
-#sinopse {
-    text-align: justify;
-    width: 20%;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f2f2f2;
-    border-radius: 10px;
-    position: absolute;
-    right: 0;
+@keyframes boom {
+    0% {
+        background-color: white;
+        opacity: 1;
+        position: absolute;
+        z-index: 9999;
+    }
+    50% {
+        opacity: 1;
+        background-color: black;
+        position: absolute;
+        z-index: 9999;
+    }
+    99% {
+        opacity: 1;
+        background-color: white;
+    }
+    100% {
+        position: absolute;
+        z-index: 9999;
+        background-color: black;
+    }
 }
 
-#sinopse h2 {
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #ffffff;
-}
-
-#sinopse p {
-    font-size: 1.2em;
-    line-height: 1.5;
-    color: #ffffff;
-    text-align: justify;
-}
-
-#sinopse {
-    animation: sinopseAnimation 3s ease-in-out;
-    animation-duration: 10s;
-    background-color: #910404;
-}
-
-@keyframes sinopseAnimation {
+/* @keyframes preto {
     from {
-        background-color: #1d4293;
     }
-
     to {
-        background-color: #910404;
-        transform: translate(0);
+        opacity: 0;
     }
-
-    from {
-        background-color: #1d4293;
-    }
-
-    to {
-        background-color: #910404;
-    }
-}
-
-@font-face {
-    font-family: CapitaoAmerica;
-    src: url(/fontes/American\ Captain.ttf);
-}
+} */

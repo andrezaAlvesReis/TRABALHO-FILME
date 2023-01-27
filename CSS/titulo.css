@@ -1,0 +1,17 @@
+@font-face {
+    font-family: CapitaoAmerica;
+    src: url(/fontes/American\ Captain.ttf);
+}
+.container-titulo {
+    display: flex;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    color: aliceblue;
+    font-family: CapitaoAmerica;
+}
