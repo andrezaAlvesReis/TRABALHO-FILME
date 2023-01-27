@@ -118,13 +118,6 @@ main {
         position: absolute;
         z-index: 9999;
         background-color: black;
+        opacity: ;
     }
 }
-
-/* @keyframes preto {
-    from {
-    }
-    to {
-        opacity: 0;
-    }
-} */

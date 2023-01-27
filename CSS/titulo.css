@@ -4,14 +4,75 @@
 }
 .container-titulo {
     display: flex;
-    display: none;
+    position: absolute;
+    z-index: -9999;
+    opacity: 0;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
+    animation: fundo 0.6s infinite;
+    animation-delay: 4.4s;
+}
+
+@keyframes fundo {
+    from {
+        opacity: 1;
+        position: absolute;
+        z-index: 9999;
+        background-color: black;
+    }
+    to {
+        opacity: 1;
+        position: absolute;
+        z-index: 9999;
+        background-color: black;
+    }
 }
 
 h1 {
-    color: aliceblue;
+    font-size: 250px;
+
+    top: -50px;
+}
+h2 {
+    font-size: 80px;
+
+    top: 0px;
+}
+.titulos {
+    margin: 0;
+    color: blue;
+    text-align: center;
     font-family: CapitaoAmerica;
+    position: relative;
+    animation: pulando 3s linear;
+    animation-delay: 4.4s;
+}
+
+.escudoFrente {
+    z-index: -10;
+    width: 800px;
+    position: absolute;
+    top: 170px;
+    left: 570px;
+    animation: girando 3s infinite linear;
+}
+
+@keyframes pulando {
+    0% {
+        top: -300px;
+    }
+    100% {
+        top: -50;
+    }
+}
+
+@keyframes girando {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        width: 800px;
+    }
 }
