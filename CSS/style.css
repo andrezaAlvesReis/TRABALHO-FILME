@@ -6,10 +6,20 @@ body {
     background: #526c87;
 }
 
+h2 {
+    font-size: 100px;
+    text-align: center;
+    margin: 0;
+
+    font-family: CapitaoAmerica;
+}
+
 h1 {
     font-size: 130px;
-    text-align: right;
-    margin-right: 60px;
+    text-align: center;
+    margin: 0;
+
+    font-family: CapitaoAmerica;
 }
 
 main {
@@ -105,6 +115,14 @@ main {
     }
 }
 
-.tamanhoDiv {
-    width: 50%;
+.tamanhoDivTitulo {
+    width: 30%;
+}
+.tamanhoDivPrincipal {
+    width: 70%;
+}
+
+@font-face {
+    font-family: CapitaoAmerica;
+    src: url(/fontes/American\ Captain.ttf);
 }
