@@ -6,22 +6,6 @@ body {
     background: #526c87;
 }
 
-h2 {
-    font-size: 140px;
-    text-align: center;
-    margin: 0;
-
-    font-family: CapitaoAmerica;
-}
-
-h1 {
-    font-size: 200px;
-    text-align: center;
-    margin: 0;
-
-    font-family: CapitaoAmerica;
-}
-
 main {
     display: flex;
     align-items: center;
@@ -119,13 +103,6 @@ main {
     to {
         background-color: #910404;
     }
-}
-
-.tamanhoDivTitulo {
-    width: 40%;
-}
-.tamanhoDivPrincipal {
-    width: 60%;
 }
 
 @font-face {
