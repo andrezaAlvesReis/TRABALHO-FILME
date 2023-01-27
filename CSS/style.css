@@ -9,7 +9,7 @@ body {
 h1 {
     font-size: 130px;
     text-align: right;
-    margin-right: 40px;
+    margin-right: 60px;
 }
 
 main {
@@ -33,7 +33,7 @@ main {
     top: 20%;
     width: 12vw;
 
-    animation: escudo 5s infinite;
+    animation: escudo 4s infinite;
 }
 
 .escudo img {
