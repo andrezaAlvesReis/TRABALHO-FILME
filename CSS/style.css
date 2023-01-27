@@ -15,7 +15,7 @@ body {
         rgba(107, 2, 7, 1) 65%,
         rgba(179, 20, 28, 1) 82%,
         rgba(243, 120, 153, 1) 100%
-    ); 
+    );
 }
 
 @keyframes gradient {
@@ -46,7 +46,6 @@ main {
 }
 
 .escudo {
-
     position: absolute;
     left: 17%;
     top: 20%;
@@ -55,7 +54,7 @@ main {
 }
 
 .escudo img {
-    max-width: 80%;
+    width: 100%;
     object-fit: contain;
 }
 
@@ -89,7 +88,6 @@ main {
     font-size: 2em;
     margin-bottom: 20px;
     color: #ffffff;
-
 }
 
 #sinopse p {
@@ -97,32 +95,22 @@ main {
     line-height: 1.5;
     color: #ffffff;
     text-align: justify;
-
 }
 
 #sinopse {
     animation: sinopseAnimation 3s ease-in-out;
     animation-duration: 10s;
     background-color: #910404;
-    
 }
-
 
 @keyframes sinopseAnimation {
     from {
-
         background-color: #1d4293;
-
-
     }
 
     to {
-
-
         background-color: #910404;
         transform: translate(0);
-
-
     }
 
     from {
@@ -133,4 +121,3 @@ main {
         background-color: #910404;
     }
 }
-
