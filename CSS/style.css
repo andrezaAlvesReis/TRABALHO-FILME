@@ -4,6 +4,7 @@ body {
     height: 100vh;
     width: 100vw;
     background: #526c87;
+    background-image: url('../images/comic-dynamic-elegant-concept-400-166471572.jpg');
 }
 
 main {
@@ -20,10 +21,19 @@ main {
     left: 200px;
     object-fit: contain;
 }
-
+.divCapitaoAmerica div {
+    position: relative;
+}
 .capitaoAmericaCorpo {
     position: absolute;
     width: 430px;
+    height: 580px;
+    z-index: 999;
+}
+.capitaoAmericaCorpoSombra {
+    position: absolute;
+    left: -130px;
+    width: 685px;
     height: 580px;
 }
 
