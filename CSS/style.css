@@ -1,133 +1,133 @@
 body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-    background-color: black;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: black;
 }
 
 main {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
 }
 
 .container {
-    width: 100%;
-    height: 100%;
-    background-image: url('../images/fundo.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    animation: preto 0.2s linear forwards;
-    animation-delay: 2.1s;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/fundo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: preto 0.2s linear forwards;
+  animation-delay: 2.1s;
 }
 
 .divCapitaoAmerica {
-    position: absolute;
-    top: 170px;
-    left: 200px;
-    object-fit: contain;
+  position: absolute;
+  top: 170px;
+  left: 200px;
+  object-fit: contain;
 }
 
 .capitaoAmericaCorpo {
-    position: absolute;
-    width: 430px;
-    height: 580px;
-    z-index: 999;
+  position: absolute;
+  width: 430px;
+  height: 580px;
+  z-index: 999;
 }
 
 .capitaoAmericaCorpoSombra {
-    position: absolute;
-    left: -130px;
-    width: 685px;
-    height: 580px;
+  position: absolute;
+  left: -130px;
+  width: 685px;
+  height: 580px;
 }
 
 .rasgo {
-    position: absolute;
-    top: -100px;
-    left: -200px;
-    width: 735px;
-    height: 700px;
+  position: absolute;
+  top: -100px;
+  left: -200px;
+  width: 735px;
+  height: 700px;
 }
 
 .escudo {
-    position: absolute;
-    left: 17%;
-    top: 20%;
-    width: 12vw;
-    animation: escudo 2s linear forwards;
-    z-index: 999;
+  position: absolute;
+  left: 17%;
+  top: 20%;
+  width: 12vw;
+  animation: escudo 2s linear forwards;
+  z-index: 999;
 }
 
 .escudo img {
-    width: 90%;
-    object-fit: contain;
+  width: 90%;
+  object-fit: contain;
 }
 
 .boom {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    animation: boom 2.5s linear forwards;
-    animation-delay: 2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  animation: boom 2.5s linear forwards;
+  animation-delay: 2s;
 }
 .boom img {
-    width: 1000px;
-    z-index: 9999;
-    opacity: 0;
-    animation: boom 2.5s linear forwards;
-    animation-delay: 2s;
+  width: 1000px;
+  z-index: 9999;
+  opacity: 0;
+  animation: boom 2.5s linear forwards;
+  animation-delay: 2s;
 }
 @keyframes escudo {
-    0% {
-        left: 17%;
-        top: 20%;
-        transform: rotate(30deg);
-    }
+  0% {
+    left: 17%;
+    top: 20%;
+    transform: rotate(30deg);
+  }
 
-    100% {
-        left: 34%;
-        width: 34%;
-        top: 0;
-    }
+  100% {
+    left: 34%;
+    width: 34%;
+    top: 0;
+  }
 }
 @keyframes boom {
-    0% {
-        background-color: white;
-        opacity: 1;
-        position: absolute;
-        z-index: 9999;
-    }
-    50% {
-        opacity: 1;
-        background-color: black;
-        position: absolute;
-        z-index: 9999;
-    }
+  0% {
+    background-color: white;
+    opacity: 1;
+    position: absolute;
+    z-index: 9999;
+  }
+  50% {
+    opacity: 1;
+    background-color: black;
+    position: absolute;
+    z-index: 9999;
+  }
 
-    78% {
-        background-color: white;
-        opacity: 1;
-        position: absolute;
-        z-index: 9999;
-    }
+  78% {
+    background-color: white;
+    opacity: 1;
+    position: absolute;
+    z-index: 9999;
+  }
 
-    99% {
-        opacity: 1;
-        background-color: black;
-        position: absolute;
-        z-index: 9999;
-    }
-    100% {
-        position: absolute;
-        z-index: 9999;
-        background-color: black;
-        opacity: 1;
-    }
+  99% {
+    opacity: 1;
+    background-color: black;
+    position: absolute;
+    z-index: 9999;
+  }
+  100% {
+    position: absolute;
+    z-index: 9999;
+    background-color: black;
+    opacity: 1;
+  }
 }
